@@ -33,3 +33,9 @@ services:
       - "8002:80"
     environment:
       WEB_DOCUMENT_ROOT: /app/public
+
+  python:
+    build:
+      context: ./python-app
+    ports:
+      - "8003:8000"
